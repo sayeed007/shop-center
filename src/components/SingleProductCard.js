@@ -44,7 +44,7 @@ const SingleProductCard = (props) => {
                 </p>
 
                 <p className="text-rose-600 text-sm mt-4">
-                    <span className="text-[#919090] line-through">
+                    <span className="text-[#919090] line-through mr-2">
                         ${props?.productDetails?.price}
                     </span>
                     {calculatedCurrentPriceAfterDiscount()}

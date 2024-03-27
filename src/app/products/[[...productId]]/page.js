@@ -4,6 +4,7 @@ import ProductList from '../../../../public/data/ProductList';
 import ImagesView from '@/components/clientComponent/imageSwapper/imagesView';
 import Link from 'next/link';
 import NotFound from '@/components/NotFound';
+import StarRating from '@/components/StarRating';
 
 
 export default function SingleProductDetails({ params }) {
@@ -47,33 +48,9 @@ export default function SingleProductDetails({ params }) {
                             <div className="mt-3 flex items-center justify-start gap-1">
 
 
-                                {
-
-                                }
-                                {/* <Image
-                                    src="./assets/svg/star.svg"
-                                    width="20px"
-                                    alt="" />
-
-                                <Image
-                                    src="./assets/svg/star.svg"
-                                    width="20px"
-                                    alt="" />
-
-                                <Image
-                                    src="./assets/svg/star.svg"
-                                    width="20px"
-                                    alt="" />
-
-                                <Image
-                                    src="./assets/svg/star.svg"
-                                    width="20px"
-                                    alt="" />
-
-                                <Image
-                                    src="./assets/svg/star.svg"
-                                    width="20px"
-                                    alt="" /> */}
+                                <StarRating
+                                    rating={selectedProductDetails?.rating}
+                                />
 
                             </div>
                             <hr className="my-5 bg-black" />
