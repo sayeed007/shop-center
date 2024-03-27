@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.thumbs-wrapper.axis-vertical {
+    display: none;
+}
+
+.productDetails {
+    height: calc(100vh - 88px);
+}
+
+.active {
+    font-size: 18px;
+    font-weight: bold;
+    /* Example style */
+}
